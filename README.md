@@ -22,4 +22,7 @@ GitHub: Plataforma utilizada para almacenar el código.
 
 GitHub Pages: Servicio utilizado para publicar la página en Internet.
 
---Capturas y Resultados de validacion--
+--Capturas Resultados de validacion--
+<img width="921" height="518" alt="image" src="https://github.com/user-attachments/assets/dfa64f62-0c19-4210-8386-137e126b1aae" />
+<img width="921" height="518" alt="image" src="https://github.com/user-attachments/assets/fd163357-0959-4f64-95f6-5025308dedda" />
+<img width="921" height="518" alt="image" src="https://github.com/user-attachments/assets/c6b727b3-6721-49cf-baea-6f3e2cdda361" />

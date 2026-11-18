@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #30271f;
+    background-color: #fffaf3;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.texto-pequeno {
+    color: #b27b44;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* MENÚ SUPERIOR */
+header {
+    background-color: #fffaf3;
+}
+
+.navegacion {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #3b2b20;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ae7540;
+}
+
+.enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.enlaces a {
+    color: #3b2b20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlaces a:hover {
+    color: #ae7540;
+}
+
+/* PORTADA */
+.inicio {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    padding: 75px max(7%, calc((100% - 1100px) / 2));
+    color: white;
+    background-image: linear-gradient(90deg, rgba(28, 19, 13, 0.88), rgba(28, 19, 13, 0.20)), url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-inicio {
+    max-width: 600px;
+}
+
+.inicio h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.inicio p:not(.texto-pequeno) {
+    font-size: 18px;
+    max-width: 510px;
+    margin-bottom: 28px;
+}
+
+.boton {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 26px;
+    color: white;
+    background-color: #a86f39;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #87552b;
+}
+
+/* PRESENTACIÓN */
+.nosotros {
+    max-width: 760px;
+    margin: auto;
+    padding: 75px 25px;
+    text-align: center;
+}
+
+.nosotros p:last-child {
+    color: #67594e;
+}
+
+/* PRODUCTOS */
+.productos {
+    background-color: #f4ede3;
+    padding: 75px 25px 90px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.titulo-seccion p:last-child {
+    color: #67594e;
+}
+
+.lista-productos {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.07);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.detalle-producto {
+    padding: 22px;
+}
+
+.detalle-producto h3 {
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+.detalle-producto p {
+    color: #67594e;
+    min-height: 54px;
+}
+
+.detalle-producto strong {
+    color: #9b642e;
+    font-size: 19px;
+}
+
+/* CONTACTO */
+.contacto {
+    max-width: 1100px;
+    margin: auto;
+    padding: 85px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.informacion-contacto h3 {
+    margin-top: 25px;
+    margin-bottom: 6px;
+}
+
+.informacion-contacto p {
+    color: #67594e;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 13px;
+    border: 1px solid #cfc3b6;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formulario .boton {
+    align-self: flex-start;
+}
+
+.aviso {
+    color: #604722;
+    font-size: 14px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #b41010;
+    color: white;
+    padding: 27px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 700px) {
+    .navegacion {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .enlaces {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .inicio {
+        min-height: 480px;
+        padding: 55px 25px;
+    }
+
+    .inicio h1 {
+        font-size: 36px;
+    }
+
+    .inicio p:not(.texto-pequeno) {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .lista-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta img {
+        height: 230px;
+    }
+
+    .contacto {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}

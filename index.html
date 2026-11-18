@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Café Pelucas: café, bebidas y postres para disfrutar cada día.">
+    <title>Café Pelucas | Un momento para ti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navegacion" aria-label="Menú principal">
+            <a href="#inicio" class="logo"> Café <span>Pelucas</span></a>
+            <ul class="enlaces">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="contenido-inicio">
+                <p class="texto-pequeno">BIENVENIDO</p>
+                <h1>El mejor café para<br>seguir con tu día.</h1>
+                <a class="boton" href="#productos">Conoce nuestro menú</a>
+            </div>
+        </section>
+
+
+        <section id="productos" class="productos">
+            <div class="titulo-seccion">
+                <h2>Menú de la casa</h2>
+            </div>
+
+            <div class="lista-productos">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=700&q=80" alt="Imagen de un cappuccino">
+                    <div class="detalle-producto">
+                        <h3>Cappuccino</h3>
+                        <p>Café espresso con leche cremosa y espuma suave.</p>
+                        <strong>$65 MXN</strong>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=80" alt="Imagen de un café frío">
+                    <div class="detalle-producto">
+                        <h3>Café frío</h3>
+                        <p>Una bebida refrescante con café y leche.</p>
+                        <strong>$70 MXN</strong>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=700&q=80" alt="Imagen de un pan dulce">
+                    <div class="detalle-producto">
+                        <h3>Pan dulce</h3>
+                        <p>Perfecto para acompañar tu bebida favorita.</p>
+                        <strong>$45 MXN</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contacto" class="contacto">
+            <div class="informacion-contacto">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta o sugerencia? Déjanos un mensaje.</p>
+            </div>
+
+            <form id="formulario-contacto" class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <button type="submit" class="boton">Enviar mensaje</button>
+                <p id="aviso" class="aviso" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p> Café Pelucas</p>
+        <p>Contactanos por nuestro email: hola@cafepelucas.com</p>
+    </footer>
+</body>
+</html>
